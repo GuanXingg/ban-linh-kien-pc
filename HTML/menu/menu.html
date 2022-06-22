@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="../../CSS/header.css">
+    <link rel="stylesheet" href="../../CSS/menu/menu-body.css">
+    <link rel="stylesheet" href="../../CSS/footer.css">
+
+	<!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+	<!--Font-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;800;900&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!----------Header---------->
+        <!--------------------
+                Banner
+                -------------------->
+        <img src="../../images/header/banner.jpg" alt="banner" width="100%" height="30px">
+        <!-------------------------------------------->
+
+        
+        <!--------------------
+                Sticky
+                -------------------->
+        <div class="sticky">
+            <!--------------------
+                    Logo
+                    -------------------->
+            <div class="logo">
+                <!-----Bars----->
+                <div class="logo-bars">
+                    <input type="checkbox" id="bars__check" hidden>
+                    <label for="bars__check" class="bars__icn"><i class="fas fa-bars"></i></label>
+                    <!---Overlay--->
+                    <label for="bars__check" class="overlay"></label>
+                    <!---Sidebar--->
+                    <div class="sidebar">
+                        <!--Icon-->
+                        <div class="sidebar-icn">
+                            <div class="sidebar-icn__user">
+                                <i class="far fa-user fa-2x"></i>
+                            </div>
+                            <div class="sidebar-icn__name">
+                                <a href="#">User name</a>
+                                <p>Số dư: 20.000.000đ | VIP</p>
+                            </div>
+    
+                            <label for="bars__check"><i class="fas fa-times fa-2x"></i></label>
+                        </div>
+                        <!--List-->
+                        <div class="sidebar-lst">
+                            <hr>
+                            <div class="sidebar-lst__menu">
+                                <a class="category__txt" data-bs-toggle="collapse" href="#collapseExample" role="button" style="color: red;">
+                                    <i class="fas fa-bars"></i> Category
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body ">
+                                        <a href="#"><i class="far fa-credit-card"></i> Case</a>
+                                        <hr class="dropdown-divider">
+                                        <a href="#"><i class="fas fa-desktop"></i> Monitor</a>
+                                        <hr class="dropdown-divider">
+                                        <a href="#"><i class="far fa-keyboard"></i> Keyboard</a>
+                                        <hr class="dropdown-divider">
+                                        <a href="#"><i class="fas fa-mouse"></i> Mouse</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="category__txt" href="#"><i class="fas fa-bell"></i> Nofitication</a>
+                            <a class="category__txt" href="#"><i class="fas fa-user-tie"></i> Sign in</a>
+                            <a class="category__txt" href="#"><i class="fas fa-user-plus"></i> Sign up</a>
+                            <a class="category__txt" href="#"><i class="fas fa-book-open"></i> About us</a>
+                            <a class="category__txt" href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-----Brand----->
+                <div class="logo-brand">
+                    <h1><a href="#">Hưng Hà</a></h1>
+                </div>
+
+                <!-----Search----->
+                <div class="logo-search">
+                    <div class="input-group">
+                        <input type="search" placeholder="     Search..." name="" value="" required>
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+        
+                <!-----Toolbar----->
+                <div class="logo-toolbar">
+                    <button class="toolbar__btn"><i class="fas fa-bell"></i> Nofitication</button>
+                    <!---Sign--->
+                    <div class="toolbar-sign">
+                        <button class="toolbar__btn"><i class="fas fa-user"></i> Sign in <i class="fas fa-caret-down"></i></button>
+                        <div class="toolbar-sign__dropdown">
+                            <a href="#">Sign in</a>
+                            <hr class="dropdown-divider">
+                            <a href="#">Sign up</a>
+                        </div>
+                    </div>
+                    <button class="toolbar__btn"><i class="fas fa-shopping-cart"></i> Cart</button>
+                </div>
+
+                <!-----Icon----->
+                <div class="logo-icn">
+                    <!---Search--->
+                    <div class="icn-search">
+                        <input type="checkbox" id="icn__check" hidden>
+                        <label for="icn__check"><i class="fas fa-search"></i></label>
+                        <div class="icn-search__box">
+                            <div class="input-group">
+                                <input type="search" name="" value="" placeholder="  Search..." required>
+                                <button><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!---Cart--->
+                    <div class="icn-cart">
+                        <a href="#"><i class="fas fa-cart-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------------->
+        
+        
+            <!--------------------
+                    List
+                    -------------------->
+            <div class="lst">
+                <!-----Category----->
+                <div class="lst-menu">
+                    <button class="lst__btn lst__btn--active"><i class="fas fa-bars"></i> Category</button>
+                    <div class="lst-menu-dropdown">
+                        <a href="#"><i class="far fa-credit-card"></i> Case</a>
+                        <hr class="dropdown-divider">
+                        <a href="#"><i class="fas fa-desktop"></i> Monitor</a>
+                        <hr class="dropdown-divider">
+                        <a href="#"><i class="far fa-keyboard"></i> Keyboard</a>
+                        <hr class="dropdown-divider">
+                        <a href="#"><i class="fas fa-mouse"></i> Mouse</a>
+                    </div>
+                </div>
+                <!-----Button----->
+                <button class="lst__btn"><i class="fas fa-gifts"></i> Voucher</button>
+                <button class="lst__btn"><i class="fas fa-credit-card"></i> Payment Guide</button>
+                <button class="lst__btn"><i class="fas fa-tools"></i> Warranty Policy</button>
+                <button class="lst__btn"><i class="fas fa-shipping-fast"></i> Shipping Policy</button>
+            </div>
+            <!-------------------------------------------->
+        </div>
+
+
+        <!--------------------
+                Voucher
+                -------------------->
+        <div class="voucher">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active voucher__img">
+                    <img src="../../images/header/voucher-gaming-1.jpg" width="100%" height="800px" alt="voucher 1">
+                </div>
+                <div class="carousel-item voucher__img">
+                    <img src="../../images/header/voucher-gaming-2.jpg" width="100%" height="800px" alt="voucher 2">
+                </div>
+                <div class="carousel-item voucher__img">
+                    <img src="../../images/header/voucher-gaming-3.jpg" width="100%" height="800px" alt="voucher 3"">
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-------------------------------------------->
+
+
+        <!--------------------
+                Cart
+                -------------------->
+        <div class="cart">
+            <a href="#"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+        </div>
+        <!-------------------------------------------->
+        
+        
+        <!--------------------
+                Info
+                -------------------->
+        <div class="info">
+            <input type="checkbox" id="info__check" hidden>
+        
+            <!-----List----->
+            <div class="info-lst">
+                <button>About us</button>
+                <button>Contact</button>
+            </div>
+                    
+            <!-----Icon----->
+            <div class="info-icn">
+                <label for="info__check"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <!-------------------------------------------->
+        
+        
+        <!--------------------
+                Return
+                -------------------->
+        <div class="return">
+            <a href="#"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <!-------------------------------------------->
+    <!------------------------------------------------------>
+
+
+
+    <!----------Body---------->
+        <!--------------------
+                Sale
+                -------------------->
+        <div class="sale">
+            <h2 class="title">
+                <span style="color: #CBBA9C; font-family: 'Alegreya', serif; font-family: 'Montserrat', sans-serif;"">hot sale</span> product
+            </h2>
+            
+            <!-----Items----->
+            <div class="items">
+                <div class="box">
+                    <!---Image--->
+                    <div class="box-product">
+                        <img src="../../images/menu/case-PC-1.jpg" alt="case PC">
+                        <h5 class="box-product-click">Click to more details</h5>
+                    </div>
+                    <!---Details--->
+                    <div class="box-details">
+                        <p class="box-details__title">Case PC 1</p>
+                        <p class="box-details__price">10.000.000đ</p>
+                        <button><i class="fas fa-shopping-cart"></i> Cart</button>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="box-product">
+                        <img src="../../images/menu/keyboard-PC-1.jpg" alt="case PC">
+                        <h5 class="box-product-click">Click to more details</h5>
+                    </div>
+                    <div class="box-details">
+                        <p class="box-details__title">Keyboard PC 1</p>
+                        <p class="box-details__price">5.000.000đ</p>
+                        <button><i class="fas fa-shopping-cart"></i> Cart</button>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="box-product">
+                        <img src="../../images/menu/monitor-PC-1.jpg" alt="case PC">
+                        <h5 class="box-product-click">Click to more details</h5>
+                    </div>
+                    <div class="box-details">
+                        <p class="box-details__title">Monitor PC 1</p>
+                        <p class="box-details__price">4.500.000đ</p>
+                        <button><i class="fas fa-shopping-cart"></i> Cart</button>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="box-product">
+                        <img src="../../images/menu/mouse-PC-1.jpg" alt="case PC">
+                        <h5 class="box-product-click">Click to more details</h5>
+                    </div>
+                    <div class="box-details">
+                        <p class="box-details__title">Mouse PC 1</p>
+                        <p class="box-details__price">3.299.000đ</p>
+                        <button><i class="fas fa-shopping-cart"></i> Cart</button>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="box-product">
+                        <img src="../../images/menu/case-PC-2.jpg" alt="case PC">
+                        <h5 class="box-product-click">Click to more details</h5>
+                    </div>
+                    <div class="box-details">
+                        <p class="box-details__title">Case PC 2</p>
+                        <p class="box-details__price">30.000.000đ</p>
+                        <button><i class="fas fa-shopping-cart"></i> Cart</button>
+                    </div>
+                </div>
+                    
+                <div class="box">
+                    <div class="box-product">
+                        <img src="../../images/menu/keyboard-PC-2.jpg" alt="case PC">
+                        <h5 class="box-product-click">Click to more details</h5>
+                    </div>
+                    <div class="box-details">
+                        <p class="box-details__title">Keyboard PC 1</p>
+                        <p class="box-details__price">7.700.000đ</p>
+                        <button><i class="fas fa-shopping-cart"></i> Cart</button>
+                    </div>
+                </div>
+                    
+                <div class="box">
+                    <div class="box-product">
+                        <img src="../../images/menu/monitor-PC-2.jpg" alt="case PC">
+                        <h5 class="box-product-click">Click to more details</h5>
+                    </div>
+                    <div class="box-details">
+                        <p class="box-details__title">Monitor PC 1</p>
+                        <p class="box-details__price">1.500.000đ</p>
+                        <button><i class="fas fa-shopping-cart"></i> Cart</button>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="box-product">
+                        <img src="../../images/menu/mouse-PC-2.jpg" alt="case PC">
+                        <h5 class="box-product-click">Click to more details</h5>
+                    </div>
+                    <div class="box-details">
+                        <p class="box-details__title">Mouse PC 1</p>
+                        <p class="box-details__price">6.000.000đ</p>
+                        <button><i class="fas fa-shopping-cart"></i> Cart</button>
+                    </div>
+                </div>		
+            </div>
+        </div>
+        <!-------------------------------------------->
+        
+        
+        <!--------------------
+                New
+                -------------------->
+        <div class="background__new">
+            <div class="new">
+                <h2 class="title">
+                    <span style="color: #CBBA9C; font-family: 'Alegreya', serif; font-family: 'Montserrat', sans-serif;">hot sale</span> product
+                </h2>
+            
+                <!-----Products----->
+                <div class="new-products">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="slideshow__list">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                            </ol>
+                        </div>
+                            
+                        <!--Items-->
+                        <div class="products-items">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <!--Left-->
+                                    <div class="items-left">
+                                        <img src="../../images/menu/case-PC-3.jpg" alt="case PC">
+                                    </div>
+                                    <!--Right-->
+                                    <div class="items-right">
+                                        <h2>Case PC 3</h2>
+                                        <p class="items-right__price"><span style="color:#B5B5B5; font-weight: lighter;"><del>30.000.000đ</del></span> 27.500.000đ</p>
+                                        <div class="items-right__feature">
+                                            <p><i class="fas fa-chevron-right"></i> Vận chuyển miễn phí toàn quốc.</p>
+                                            <p><i class="fas fa-chevron-right"></i> Giao hàng trong ngày</p>
+                                            <p><i class="fas fa-chevron-right"></i> Thanh toán sau khi nhận hàng</p>
+                                            <p><i class="fas fa-chevron-right"></i> Bảo hành 2 năm tại Công ty</p>
+                                            <p><i class="fas fa-chevron-right"></i> Bảo hành chính hãng toàn cầu</p>
+                                        </div>
+                                        <p class="items-right__code">Mã: 19000508</p>
+                                        <button>View more</button>
+                                    </div>
+                                </div>
+                    
+                                <div class="carousel-item">
+                                    <div class="items-left">
+                                        <img src="../../images/menu/keyboard-PC-3.jpg" alt="case PC">
+                                    </div>
+                                    <div class="items-right">
+                                        <h2>Keyboard PC 3</h2>
+                                        <p class="items-right__price"><span style="color:#B5B5B5; font-weight: lighter;"><del>3.999.000đ</del></span> 2.500.000đ</p>
+                                        <div class="items-right__feature">
+                                            <p><i class="fas fa-chevron-right"></i> Vận chuyển miễn phí toàn quốc.</p>
+                                            <p><i class="fas fa-chevron-right"></i> Giao hàng trong ngày</p>
+                                            <p><i class="fas fa-chevron-right"></i> Thanh toán sau khi nhận hàng</p>
+                                            <p><i class="fas fa-chevron-right"></i> Bảo hành 2 năm tại Công ty</p>
+                                            <p><i class="fas fa-chevron-right"></i> Bảo hành chính hãng toàn cầu</p>
+                                        </div>
+                                        <p class="items-right__code">Mã: 19000508</p>
+                                        <button>View more</button>
+                                    </div>
+                                </div>
+                    
+                                <div class="carousel-item">
+                                    <div class="items-left">
+                                        <img src="../../images/menu/monitor-PC-3.jpg" alt="case PC">
+                                    </div>
+                                    <div class="items-right">
+                                        <h2>Case PC 3</h2>
+                                        <p class="items-right__price"><span style="color:#B5B5B5; font-weight: lighter;"><del>10.500.000đ</del></span> 9.800.000đ</p>
+                                        <div class="items-right__feature">
+                                            <p><i class="fas fa-chevron-right"></i> Vận chuyển miễn phí toàn quốc.</p>
+                                            <p><i class="fas fa-chevron-right"></i> Giao hàng trong ngày</p>
+                                            <p><i class="fas fa-chevron-right"></i> Thanh toán sau khi nhận hàng</p>
+                                            <p><i class="fas fa-chevron-right"></i> Bảo hành 2 năm tại Công ty</p>
+                                            <p><i class="fas fa-chevron-right"></i> Bảo hành chính hãng toàn cầu</p>
+                                        </div>
+                                        <p class="items-right__code">Mã: 19000508</p>
+                                        <button>View more</button>
+                                    </div>
+                                </div>
+                    
+                                <div class="carousel-item">
+                                    <div class="items-left">
+                                        <img src="../../images/menu/mouse-PC-3.jpg" alt="case PC">
+                                    </div>
+                                    <div class="items-right">
+                                        <h2>Case PC 3</h2>
+                                        <p class="items-right__price"><span style="color:#B5B5B5; font-weight: lighter;"><del>2.000.000đ</del></span> 1.500.000đ</p>
+                                        <div class="items-right__feature">
+                                            <p><i class="fas fa-chevron-right"></i> Vận chuyển miễn phí toàn quốc.</p>
+                                            <p><i class="fas fa-chevron-right"></i> Giao hàng trong ngày</p>
+                                            <p><i class="fas fa-chevron-right"></i> Thanh toán sau khi nhận hàng</p>
+                                            <p><i class="fas fa-chevron-right"></i> Bảo hành 2 năm tại Công ty</p>
+                                            <p><i class="fas fa-chevron-right"></i> Bảo hành chính hãng toàn cầu</p>
+                                        </div>
+                                        <p class="items-right__code">Mã: 19000508</p>
+                                        <button>View more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="slideshow__direction">
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------->
+        
+        
+        <!--------------------
+                Tab
+                -------------------->
+        <div class="tab">
+            <ul class="tab-lst">
+                <li><a href="body-product/body-best-seller.html" target="tab__products">Best seller</a></li>
+                <li><a href="body-product/body-popular.html" target="tab__products">Popular</a></li>
+                <li><a href="body-product/body-another.html" target="tab__products">Another</a></li>
+            </ul>
+                
+            <iframe src="body-product/body-best-seller.html" name="tab__products" width="100%"  height="850px"></iframe>
+        </div>
+        <!-------------------------------------------->
+    <!------------------------------------------------------>
+
+
+
+    <!----------Footer---------->
+       <div class="background__footer">
+        <div class="footer">
+            <!--Left-->
+            <div class="footer-left">
+                <h4>CÔNG TY TNHH HƯNG HÀ</h4>
+                <h5 class="footer-left__mail">email: thanhcry@gmail.com</h5>
+                <h5 class="footer-left__system">Hệ thống tổng đài: <span>24/7</span></h5> 
+
+                <table class="footer-left-table">
+                    <tr>
+                        <td>Hỗ trợ khách hàng: </td>
+                        <th>19000508</th>
+                    </tr>
+                    <tr>
+                        <td>Tuyển dụng:</td>
+                        <th>19004949</th>
+                    </tr>
+                </table>
+                
+                <img src="../../images/footer/logo.jpg" alt="logo" width="150px" height="150px">
+            </div>
+    
+            <!--Mid-->
+            <div class="footer-mid">
+                <h4>Hệ thống cửa hàng</h4>
+                <table class="footer-mid__table">
+                    <tr>
+                        <th>CN1</th>
+                        <th>CN2</th>
+                    </tr>
+                    <tr>
+                        <td>ABCXYZ P.10 Q.10</td>
+                        <td>XXXYYYZZZ P.2 Q.2</td>
+                    </tr>
+                </table>
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4604880013426!2d106.66518151526031!3d10.775999862147128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3ae5901877%3A0x42c37972de865906!2zODI4IFPGsCBW4bqhbiBI4bqhbmgsIFBoxrDhu51uZyAxMiwgUXXhuq1uIDEwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1607749843299!5m2!1svi!2s" width="350" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            
+            <!--Right-->
+            <div class="footer-right">
+                <h4>Page</h4>
+    
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+    </div>
+     <!------------------------------------------------------>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>

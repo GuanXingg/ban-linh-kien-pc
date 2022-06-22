@@ -1,0 +1,500 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*----------------------------------------*/
+
+/*--------------------
+        Sticky
+        --------------------*/
+.sticky {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.slideshow {
+    z-index: -1;
+}
+
+    /*--------------------
+            Cart
+            --------------------*/
+    .cart {
+        position: fixed;
+        z-index: 2;
+        height: 50px;
+        background-color: orange;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        display: none;
+    }
+    .cart > a {
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        display: block;
+        padding-top: 5px;
+    }
+    /*----------------------------------------*/ 
+        
+    /*--------------------
+            Info
+            --------------------*/
+    .info {
+        position: fixed;
+        top: 200px;
+        display: flex;
+        z-index: 1;
+    }
+        /*-----List-----*/
+        .info-lst {
+            display: flex;
+            flex-direction: column;
+        }
+        .info-lst > button {
+            border: none;
+            background-color: rgb(185, 168, 168);
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            width: 150px;
+            height: 50px;
+            margin-bottom: 2px;
+            transform: translateX(-100%);
+            transition: 0.6s;
+        }
+        /*-----Icon-----*/
+        .info-icn > label {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(185, 168, 168);
+            color: white;
+            text-align: center;
+            padding-top: 13px;
+            margin-left: 2px;
+            transform: translateX(-300%);
+            transition: 0.6s;
+        }
+        .info > input:checked ~ .info-icn > label {
+            transform: translateX(0%);
+            transition: 0.6s;
+        }
+        .info > input:checked ~ .info-lst > button {
+            transform: translateX(0%);
+            transition: 0.6s;
+        }
+    /*----------------------------------------*/
+            
+    /*--------------------
+            Return
+            --------------------*/
+    .return > a {
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background-color:rgb(182, 168, 168);
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 15px;
+        bottom: 30px;
+        right: 40px;
+    }   
+    /*----------------------------------------*/
+/*----------------------------------------*/
+
+
+/*--------------------
+        Logo
+        --------------------*/
+.logo {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+    /*-----Bars-----*/
+    .logo-bars > input:checked ~ .overlay {
+        display: block;
+    }
+    .logo-bars > input:checked ~ .sidebar {
+        transform: translateX(0%);
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .bars__icn{
+        font-size: 25px;
+        color: white;
+        display: none;
+    }
+        /*---Overlay---*/
+        .overlay {
+            position: fixed;
+            z-index: 99;
+            background-color: rgba(0, 0, 0, 0.322);
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: none;
+        }
+        /*---Sidebar---*/
+        .sidebar {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 320px;
+            position: fixed;
+            max-width: 100%;
+            background-color: white;
+            z-index: 99;
+            transform: translateX(-100%);
+            transition: 0.5s;
+            opacity: 0;
+        }
+            /*--Icon--*/
+            .sidebar-icn__user {
+                width: 45px;
+                height: 45px;
+                text-align: center;
+                padding-top: 2px;
+                color: rgb(41, 38, 38);
+                position: absolute;
+                top: 40px;
+                left: 30px;
+                border: solid 2px  rgb(41, 38, 38);
+                border-radius: 50%;
+            }
+            .sidebar-icn__name > a {
+                text-decoration: none;
+                display: block;
+                position: absolute;
+                font-size: 20px;
+                color: rgb(54, 54, 197);
+                top:  40px;
+                left: 85px;
+            }
+            .sidebar-icn__name > a:hover {
+                color: rgb(173, 150, 107);
+                text-shadow: 0 0 1px rgb(173, 150, 107) ;
+            }
+            .sidebar-icn__name > p {
+                position: absolute;
+                font-size: 14px;
+                color: rgb(88, 87, 87);
+                top: 65px;
+                left: 85px;
+            }
+            .sidebar-icn > label {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                padding-top: 2px;
+                color: rgb(41, 38, 38);
+                position: absolute;
+                top:  40px;
+                right: 20px;
+            }
+            /*--List--*/
+            .sidebar-lst{
+                margin-top: 120px;
+            }
+            .category__txt {
+                text-decoration: none;
+                display: block;
+                color: black;
+                padding: 10px 40px;
+                font-size: 20px;
+            }
+
+    /*-----Brand-----*/
+    .logo-brand > h1{
+        color: white;
+        text-shadow: 0 0 5px yellow;
+    }
+    .logo-brand > h1 > a{
+        text-decoration: none;
+        color: white;
+    }
+    .logo-brand > h1 > a:hover {
+        color: white;
+    }
+
+    /*-----Search-----*/
+    .logo-search > .input-group > input {
+        width: 400px;
+        height: 30px;
+        border: none;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .logo-search > .input-group > button {
+        border: none;
+        background-color: red;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 35px;
+    }
+    .logo-search > .input-group > button > i {
+        color: white;
+    }
+
+    /*-----Toolbar-----*/
+    .logo-toolbar {
+        display: flex;
+    }
+    .toolbar__btn {
+        border: none;
+        background-color: black ;
+        color: white;
+        width: 150px;
+        height: 50px;
+        margin-right: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        transition: 0.6s;
+        padding: 10px;
+    }
+    .toolbar__btn:hover {
+        box-shadow: 2px -2px 5px red;
+        border: solid 1px red;
+        transition: 0.6s;
+    }
+        /*---Sign---*/
+        .toolbar-sign {
+            position: relative;
+        }
+        .toolbar-sign:hover .toolbar-sign__dropdown {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.3s;
+        }
+        .toolbar-sign__dropdown {
+            background-color: white;
+            width: 150px;
+            line-height: 40px;
+            position: absolute;
+            visibility: hidden;
+            transition: 0.3s;
+            opacity: 0;
+            z-index: 10;
+        }
+        .toolbar-sign__dropdown > a {
+            display: block;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            transition: 0.2s;
+        }
+        .toolbar-sign__dropdown > a:hover {
+            background-color: rgb(187, 18, 18);
+            color: white;
+            transition: 0.2s;
+        }
+
+    /*-----Icon-----*/
+    .logo-icn {
+        display: flex;
+    }
+        /*-----Search-----*/
+        .icn-search {
+            font-size: 20px;
+            color: white;
+            display: none;
+        }
+        .icn-search > label {
+            background-color: black;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            padding-top: 2px;
+        }
+        .icn-search > input:checked ~ .icn-search__box {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.3s;
+        }
+        .icn-search__box {
+            position: absolute;
+            background-color: rgb(49, 45, 45);
+            padding: 20px 10px;
+            top: 70px;
+            right: 40px;
+            width: 250px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+        }
+        .icn-search__box > .input-group > input {
+            width: 200px;
+            font-size: 18px;
+            border: solid 1px black;
+            background-color: black;
+            color: white;
+        }
+        .icn-search__box > .input-group > button {
+            border: none;
+            background-color: rgb(11, 158, 11);
+            color: white;
+            width: 30px;
+        }
+        /*-----Cart-----*/
+        .icn-cart {
+            font-size: 20px;
+            margin-right: 20px;
+            display: none;
+        }
+        .icn-cart > a {
+            color: white;
+        }
+        .icn-cart > a:hover {
+            color: white;
+        }
+/*----------------------------------------*/
+
+
+/*--------------------
+        List
+        --------------------*/
+.lst {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    background-color: black;
+    align-items: center;
+    height: 80px;
+}
+    /*-----Category-----*/
+    .lst-menu {
+        position: relative;
+    }
+    .lst-menu:hover  .lst-menu-dropdown {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .lst-menu-dropdown {
+        background-color: white;
+        position: absolute;
+        width: 200px;
+        visibility: hidden;
+        z-index: 10;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .lst-menu-dropdown > a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        line-height: 40px;
+        padding: 5px 10px;
+        transition: 0.2s;
+    }
+    .lst-menu-dropdown > a:hover {
+        color: white;
+        background-color: red;
+        transition: 0.2s;
+    }
+
+    /*-----Button-----*/
+    .lst__btn{
+        border: solid 1px red;
+        height: 40px;
+        width: 200px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    .lst__btn:hover {
+        background-color: red;
+        transition: 0.5s;
+    }
+    .lst__btn--active {
+        background-color: #505050;
+        border: none;
+        transition: 0.5s;
+    }
+    .lst__btn--active:hover {
+        background-color: #3f3d3d;
+        box-shadow: 0 0 5px white;
+        transition: 0.5s;
+    }
+/*----------------------------------------*/
+
+
+/*--------------------
+        Responsive
+        --------------------*/
+    /*-----Tablet-----*/
+    @media only screen and (min-width: 768px) and (max-width: 1300px) {
+        .logo-search, .logo-toolbar, .sidebar-lst__menu {
+            display: none;
+        }
+        .bars__icn {
+            display: block;
+            margin-left: 20px;
+        }
+        .icn-search, .icn-cart {
+            display: block;
+            margin-right: 20px;
+        }
+        .logo, .lst {
+            width: 100%;
+        }
+        .logo-brand {
+            flex-grow: 3;
+            text-align: center;
+        }
+        .lst {
+            justify-content: space-evenly;
+        }
+        .lst__btn {
+            width: 150px;
+        }
+        .voucher__img > img {
+            height: 600px;
+        }
+    }
+
+        /*-----Mobile-----*/
+        @media only screen and (min-width: 320px) and (max-width: 767px) {
+            .logo-search, .logo-toolbar, .lst, .voucher {
+                display: none;
+            }
+            .bars__icn {
+                display: block;
+                margin-left: 20px;
+            }
+            .icn-search, .icn-cart {
+                display: block;
+                margin-right: 20px;
+            }
+            .logo, .sidebar {
+                width: 100%;
+            }
+            .logo-brand {
+                flex-grow: 3;
+                text-align: center;
+            }
+            .lst {
+                justify-content: center;
+            }
+            .lst__btn {
+                width: 150px;
+            }
+            .voucher__img > img {
+                height: 600px;
+            }
+        }
